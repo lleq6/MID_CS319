@@ -1,4 +1,4 @@
-class Student
+export class Student
 {
     name : string;
     age : number;
@@ -20,9 +20,10 @@ class Student
 
     getAverageGrade() : number
     {
-        let sum = this.grades.reduce((sum, grade) => {
-            return sum + grade;
-        }, 0);
+        let sum = 0;
+        this.grades.forEach((grade) => {
+            sum += grade;
+        });
         return sum / this.grades.length;
     }
 

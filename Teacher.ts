@@ -1,4 +1,7 @@
-class Teacher extends Person
+import {Student} from './Student';
+import {Person} from './Person';
+
+export class Teacher extends Person
 {
     subject : string;
     students : Student[];
