@@ -5,6 +5,17 @@
       }
     },
     "compilerOptions": {
-      "module": "esnext"
+        "module": "ES2022",
+        "target": "ES2023",
+        "lib": [
+            "ES2023",
+            "dom"
+        ],
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "./public/js/app"
     }
   }
