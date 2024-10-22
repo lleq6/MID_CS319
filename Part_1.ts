@@ -1,4 +1,4 @@
-import {Student} from './Student';
+import { Student } from './Student';
 
 const m_Student1 = new Student("A", 21);
 m_Student1.addGrade(90);
