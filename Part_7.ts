@@ -23,8 +23,8 @@ m_dbStudent.addEntry(m_Student3);
 
 const Students = m_dbStudent.getAllEntries();
 const m_StudentsFilter = Students.filter(x => x.getAverageGrade() > 75);
-const m_StudentMap = m_StudentsFilter.map(x => x.name);
-const m_StudentReduce = m_StudentsFilter.reduce((GPA, x) => GPA + x.grades.length, 0);
+const m_StudentMap = Students.map(x => x.name);
+const m_StudentReduce = Students.reduce((GPA, x) => GPA + x.grades.length, 0);
 
 console.log("Students with an average grade above 75", m_StudentsFilter);
 console.log("Name", m_StudentMap);
