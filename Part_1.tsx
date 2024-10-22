@@ -3,13 +3,14 @@ class Student
     name : string;
     age : number;
     grades : number[];
-    static totalStudent : number;
+    static total : number = 0;
 
     constructor(name : string, age : number)
     {
         this.name = name;
         this.age = age;
-        Student.totalStudent++;
+        this.grades = []
+        Student.total++;
     }
 
     addGrade(grade : number) : void
@@ -27,7 +28,7 @@ class Student
 
     static totalStudents() : number
     {
-        return Student.totalStudent;
+        return Student.total;
     }
 }
 
@@ -48,3 +49,5 @@ m_Student3.addGrade(60);
 m_Student3.addGrade(55);
 m_Student3.addGrade(80);
 console.log(`${m_Student3.name} average grade = ${m_Student3.getAverageGrade()}`);
+
+console.log(`Total number of student = ${Student.totalStudents()}`)
