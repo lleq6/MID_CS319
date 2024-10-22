@@ -42,4 +42,4 @@
 เป็นการสร้าง HTML เพื่อสร้างฟอร์มการ Add Student โดยใช้ jQuery DOM Manipulation
 โค้ดในส่วน `$(document).ready(function()` เป็นการตรวจสอบว่า DOM ถูกโหลดเรียบร้อยแล้ว
 และโค้ดในส่วน `$('#studentForm').submit(function(event)` เป็นการดักจับ Event การ Submit ของ ID `#studentForm`
-เพื่อนำค่า ID `#studentName` แสดงค่าโดยใช้ Tag <li> ที่จะถูกแสดงในรายการ ID `#studentsList` โดยใช้ Tag <ul>
+เพื่อนำค่า ID `#studentName` แสดงค่าโดยใช้ Tag `<li>` ที่จะถูกแสดงในรายการ ID `#studentsList` โดยใช้ Tag `<ul>`
